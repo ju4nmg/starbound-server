@@ -2,7 +2,7 @@
 
 #Created by jmgimenez
 #user and password
-sed -i "s/USERNAME/${user}/g" steam/steamcmd/starbound_update.txt
+sed -i "s/USERNAME/${user}/g" /steam/steamcmd/starbound_update.txt
 sed -i "s/PASSWORD/${pass}/g" /steam/steamcmd/starbound_update.txt
 
 #update
