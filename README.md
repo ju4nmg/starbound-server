@@ -8,4 +8,4 @@ Simple starbound server for testing porpouse, is based on pboardman/starbound-do
 
 - Run a docker container as follows:    
 
-``` docker run -d -p=21025:21025 -e user=(yoursteamusername) -e STEAM_PASSWORD=(yoursteampassword) thrash3d/starbound-server ```
+``` docker run -d -p=21025:21025 -e user=(yoursteamusername) -e pass=(yoursteampassword) thrash3d/starbound-server ```
