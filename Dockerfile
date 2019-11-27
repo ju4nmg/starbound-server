@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:14.04
 ENV STEAM /home/steam/steamcmd
 ENV user username
 ENV pass password
@@ -21,5 +21,5 @@ RUN wget -qO- 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.t
 RUN mkdir ${STEAM}/starbound
 RUN ls ${STEAM}
 EXPOSE 21025
-VOLUME      ["/home/steam/steamcmd/starbound"]
-ENTRYPOINT  ["/home/steam/steamcmd/server-start.sh"]
+VOLUME      ["/steam/steamcmd/starbound"]
+ENTRYPOINT  ["/steam/steamcmd/server-start"]
