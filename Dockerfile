@@ -20,6 +20,7 @@ RUN wget -qO- 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.t
 #instalar starbound server
 RUN mkdir ${STEAM}/starbound
 RUN ls ${STEAM}
+RUN chmod 777 /steam/steamcmd/server-start
 EXPOSE 21025
 VOLUME      ["/steam/steamcmd/starbound"]
 ENTRYPOINT  ["/steam/steamcmd/server-start"]
