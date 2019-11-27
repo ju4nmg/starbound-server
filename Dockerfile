@@ -1,5 +1,4 @@
 FROM ubuntu:latest
-LABEL github.com/thrash3d 
 ENV STEAM /home/steam/steamcmd
 ENV user username
 ENV pass password
