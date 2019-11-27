@@ -1,4 +1,4 @@
-login USERNAME PASSWORD
+login user pass
 force_install_dir ./starbound
 app_update 211820
 quit
