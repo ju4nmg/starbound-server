@@ -21,5 +21,5 @@ RUN wget -qO- 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.t
 RUN mkdir ${STEAM}/starbound
 RUN ls ${STEAM}
 EXPOSE 21025
-VOLUME      ["${STEAM}/starbound"]
-ENTRYPOINT  ["${STEAM}/server-start.sh"]
+VOLUME      ["/home/steam/steamcmd/starbound"]
+ENTRYPOINT  ["/home/steam/steamcmd/server-start.sh"]
