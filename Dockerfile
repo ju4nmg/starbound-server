@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-ENV STEAM /home/steam/steamcmd
+ENV STEAM /steam/steamcmd
 ENV user username
 ENV pass password
 WORKDIR ${STEAM}
@@ -10,7 +10,7 @@ RUN apt-get update && \
  
 #Copiar los scripts 
 RUN cd ${STEAM} && \
-	wget https://raw.githubusercontent.com/thrash3d/starbound-server/master/server-start.sh && \
+	wget https://raw.githubusercontent.com/thrash3d/starbound-server/master/server-start && \
 	wget https://raw.githubusercontent.com/thrash3d/starbound-server/master/starbound_update.txt && \
 	ls
 
